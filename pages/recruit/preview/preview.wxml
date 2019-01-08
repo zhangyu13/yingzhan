@@ -1,0 +1,72 @@
+<!--pages/recruit/preview/preview.wxml-->
+<view class='preview'>
+  <view class='portrait'>
+    <view class='background'>
+      <image mode='aspectFill' src='{{information.img}}'></image>
+    </view>
+    <view class='covercolor'></view>
+    <view class='pic'>
+      <image mode='aspectFill' src='{{information.img}}'></image>
+    </view>
+    <view class='news'>
+      <view class='name'>{{information.name}}
+        <image></image>
+      </view>
+      <view class='experience'>ID：{{information.id}}</view>
+      <view class='type'>{{information.type}}</view>
+    </view>
+    <view class='report' bindtap='report'>
+      <image src='../../../images/report.png'></image>
+    </view>
+  </view>
+  <view class='self'>
+    <view class='area'>企业信息</view>
+    <view class='introduce'>{{information.info}}</view>
+  </view>
+  <view class='self address_box'>
+    <view class='area'>企业地址</view>
+    <view class='address'>
+      <view class='address_box'>
+        <image mode='aspectFill' src='../../../images/address_select.png'></image>
+      </view>
+      <view class='write'>{{information.address}}</view>
+      <view class='more'>
+        <image mode='aspectFill' src='../../../images/more.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='self'>
+    <view class='area'>标签</view>
+    <view class='tag'>
+      <view wx:for="{{information.label}}" wx:key="{{index}}" class='label'>{{information.label[index]}}</view>
+    </view>
+  </view>
+  <view class='content_img'>
+    <view class='content'>立即沟通</view>
+  </view>
+  <view class='cover'  wx:if="{{reason}}">
+    <view class='main'>
+      <view class='reason'>
+        <view class='inform'>举报对方</view>
+        <view class='list' bindtap='reason'>广告</view>
+        <view class='list' bindtap='reason'>色情</view>
+        <view class='list' bindtap='reason'>违法-政治敏感内容</view>
+        <view class='list' bindtap='reason'>个人简历不真实</view>
+        <view class='list' bindtap='reason'>索取隐私</view>
+        <view class='list' bindtap='reason'>人身攻击</view>
+        <view class='list' bindtap='reason'>猎头骚扰</view>
+        <view class='list' bindtap='reason'>其他</view>
+      </view>
+      <view class='cancel' bindtap='cancel'>取消</view>
+    </view>
+  </view>
+  <view class='success' wx:if="{{toast}}">
+    <view class='main'>
+      <view class='prompt'>
+        <view>举报成功</view>
+        <view>请返回查看</view>
+      </view>
+      <view class='know' bindtap='know'>知道了</view>
+    </view>
+  </view>
+</view>

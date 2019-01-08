@@ -1,0 +1,84 @@
+<!--pages/request/resume/resume.wxml-->
+<view class='preview'>
+  <view class='portrait'>
+    <view class='background'><image mode='aspectFill' src='{{information.img}}'></image></view>
+    <view class='covercolor'></view>
+    <view class='pic'><image src='{{information.img}}'></image></view>
+    <view class='news'>
+      <view class='name'>{{information.name}}<image></image></view>
+      <view class='experience'>{{information.jobyears}}/{{information.job}}</view>
+      <view class='basic'>
+        <view class='age'><image mode='aspectFill' src='../../../images/age.png'></image> {{information.age}}岁</view> 
+        <view class='stature'><image mode='aspectFill' src='../../../images/height.png'></image> {{information.height}}cm</view>
+        <view class='weight'><image mode='aspectFill' src='../../../images/weight.png'></image> {{information.weight}}kg</view>
+      </view>
+      
+    </view><view class='report'><image src='../../../images/report.png'></image></view>
+  </view>
+  <view class='self'>
+    <view class='area'>个人介绍</view>
+    <view class='introduce'>{{information.info}}</view>
+  </view>
+  <view class='list'>
+    <view class='area'>职业状态</view>
+    <view class='status'>{{information.status}} </view>
+  </view>
+  <view class='list'>
+    <view class='area'>薪资要求</view>
+    <view class='money'>{{information.money}}</view>
+  </view>
+  <view class='list'>
+    <view class='area'>目标城市</view>
+    <view class='city'>{{information.city}}</view>
+  </view>
+  <view class='works'>
+    <view class='title'>音乐作品</view>
+    <view class='add_box'>
+      <view class='add' bindtap='chooseVoice'>+
+      <image src=''></image></view>
+      <view class='data'>
+        <view class='song_name'>多余的温柔</view>
+        <view class='user'>不行啊手使用</view>
+        <view class='length'>04.02</view>
+      </view>
+    </view>
+    <view class='add_box'>
+      <view class='add'  bindtap='chooseVoice'>+
+      <image src=''></image></view>
+      <view class='data'>
+        <view class='song_name'>多余的温柔</view>
+        <view class='user'>不行啊手使用</view>
+        <view class='length'>04.02</view>
+      </view>
+    </view>
+    <view class='add_box'>
+      <view class='add' bindtap='chooseVoice'>+
+      <image src=''></image></view>
+      <view class='data'>
+        <view class='song_name'>多余的温柔</view>
+        <view class='user'>不行啊手使用</view>
+        <view class='length'>04.02</view>
+      </view>
+    </view>
+  </view>
+  <view class='radio'>
+    <view class='title'>视频作品</view>
+    <view class='radio_works'>
+      <view class='radio_box' bindtap='chooseVideo'>+</view>
+      <view class='radio_box' bindtap='chooseVideo'>+</view>
+      <view class='radio_box' bindtap='chooseVideo'>+</view>
+    </view>
+  </view>
+  <view class='image'>
+    <view class='title'>图片作品</view>
+    <view class='image_works'>
+      <view class='image_box' bindtap='chooseImg'>+</view>
+      <view class='image_box' bindtap='chooseImg'>+</view>
+      <view class='image_box' bindtap='chooseImg'>+</view>
+      <view class='image_box' bindtap='chooseImg'>+</view>
+      <view class='image_box' bindtap='chooseImg'>+</view>
+      <view class='image_box' bindtap='chooseImg'>+</view>
+    </view>
+  </view>
+  <view class='save'>立即沟通</view>
+</view>

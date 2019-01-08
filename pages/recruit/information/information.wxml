@@ -1,0 +1,161 @@
+<!--pages/request/information/information.wxml-->
+<view class='information'>
+  <view class='find'>
+    <input placeholder='搜索ID'></input>
+    <image class='find_icon' src='../../../images/find.png'></image>
+    <view class='empty'>×</view>
+    <view class='cancel'>取消</view>
+  </view>
+  <view class='select'>
+    <view class='area active'>地区
+      <image src='../../../images/slide_select.png'></image>
+    </view>
+    <view class='type'>类别
+      <image src='../../../images/unselect.png'></image>
+    </view>
+    <view class='job'>职位
+      <image src='../../../images/unselect.png'></image>
+    </view>
+  </view>
+  <view class='list' wx:if="{{recruit==''}}">
+    <navigator url='/pages/request/means/means' wx:for="{{recruitlist}}" wx:key="{{index}}"><view class='item'>
+      <view class='left_img'><image src='{{item.img}}'></image></view>
+      <view class='data'>
+        <view class='name'>{{item.name}}</view>
+        <view class='first'>{{item.label}}</view>
+        <view class='tag'>
+          <view class='label' wx:for="{{item.clabel}}" wx:for-item="{{list}}" wx:key="{{index}}">{{item.clabel[index]}}</view>
+          <!-- <view class='label'>爱浪漫</view>
+          <view class='label'>敏感</view> -->
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        {{item.address}}</view>
+      </view>
+      <image mode='aspectFill' class='background' src='../../../images/position.png'></image>
+      <view class='categorize'>
+        
+        <view class='title'>{{item.job}}</view> 
+        <view class='salary'>{{item.money}}</view> 
+      </view>
+    </view></navigator>
+    <!-- <view class='item'>
+      <view class='left_img'><image src='../../../images/2.jpg'></image></view>
+      <view class='data'>
+        <view class='name'>不羁放纵</view>
+        <view class='first'>工作狂</view>
+        <view class='tag'>
+          <view class='label'>工作狂</view>
+          <view class='label'>爱浪漫</view>
+          <view class='label'>敏感</view>
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        上海市普陀区xxxxx</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>灯光师</view>  
+        <view class='salary'>10K-12K</view>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left_img'><image src='../../../images/3.jpg'></image></view>
+      <view class='data'>
+        <view class='name'>电音王子</view>
+        <view class='first'>工作狂</view>
+        <view class='tag'>
+          <view class='label'>工作狂</view>
+          <view class='label'>重金属</view>
+          <view class='label'>敏感</view>
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        上海市黄浦区xxxxx</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>电音师</view>  
+        <view class='salary'>10K-12K</view>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left_img'><image src='../../../images/4.jpg'></image></view>
+      <view class='data'>
+        <view class='name'>夜太美</view>
+        <view class='first'>工作狂</view>
+        <view class='tag'>
+          <view class='label'>射手座</view>
+          <view class='label'>爱浪漫</view>
+          <view class='label'>敏感</view>
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        上海市静安区xxxxx</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>歌手</view>  
+        <view class='salary'>10K-12K</view>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left_img'><image src='../../../images/3.jpg'></image></view>
+      <view class='data'>
+        <view class='name'>电音王子</view>
+        <view class='first'>工作狂</view>
+        <view class='tag'>
+          <view class='label'>工作狂</view>
+          <view class='label'>重金属</view>
+          <view class='label'>敏感</view>
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        上海市黄浦区xxxxx</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>电音师</view>  
+        <view class='salary'>10K-12K</view>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left_img'><image src='../../../images/3.jpg'></image></view>
+      <view class='data'>
+        <view class='name'>电音王子</view>
+        <view class='first'>工作狂</view>
+        <view class='tag'>
+          <view class='label'>工作狂</view>
+          <view class='label'>重金属</view>
+          <view class='label'>敏感</view>
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        上海市黄浦区xxxxx</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>电音师</view>  
+        <view class='salary'>10K-12K</view>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left_img'><image src='../../../images/3.jpg'></image></view>
+      <view class='data'>
+        <view class='name'>电音王子</view>
+        <view class='first'>工作狂</view>
+        <view class='tag'>
+          <view class='label'>工作狂</view>
+          <view class='label'>重金属</view>
+          <view class='label'>敏感</view>
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        上海市黄浦区xxxxx</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>电音师</view>  
+        <view class='salary'>10K-12K</view>
+      </view>
+    </view> -->
+  </view>
+  <view class='recruit_empty' wx:else>
+    <image src='../../../images/recruit_empty.png'></image>
+    <view class='title'>找不到该内容</view>
+  </view>
+</view>

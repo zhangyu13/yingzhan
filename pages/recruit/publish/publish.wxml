@@ -1,0 +1,24 @@
+<!--pages/recruit/publish/publish.wxml-->
+<view class='publish'>
+  <view class='list'>
+    <view class='item' wx:for="{{information}}" wx:key="{{index}}" bindtap='handle'>
+      <view class='left_img'><image src='{{item.img}}'></image></view>
+      <view class='data'>
+        <view class='name'>{{item.name}}</view>
+        <view class='price'>{{item.jobyears}}.{{item.money}}</view>
+        <view class='tag'>
+          <view class='label'>{{item.address}}</view>
+        </view>
+      </view>
+      <view class='details'><image src='../../../images/details.png'></image></view>
+    </view>
+  </view>
+  <navigator url='/pages/recruit/latest/latest'><view class='publish_job'>发布新职位</view></navigator>
+  <view class='cover' wx:if='{{handle}}'>
+    <view class='main'>
+      <button class='share' open-type='share'>分享</button>
+      <view class='del'>删除</view>
+      <view class='cancel' bindtap='cancel'>取消</view>
+    </view>
+  </view>
+</view>

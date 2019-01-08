@@ -1,0 +1,121 @@
+<!--pages/request/resume/resume.wxml-->
+<view class='resume'>
+  <view class='portrait'>
+    <view class='background'>
+      <image mode='aspectFill' src='../../../images/2.jpg'></image>
+    </view>
+    <view class='covercolor'></view>
+    <view class='pic'>
+      <image src='../../../images/2.jpg'></image>
+    </view>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class='list'>
+      <view class='area'>姓名</view>
+      <view class='entering'>
+        <input placeholder='请填写姓名' name="name" />
+      </view>
+    </view>
+    <view class='list'>
+      <view class='area'>年龄</view>
+      <view class='entering'>
+        <input placeholder='请填写年龄' name="age" type="number" />
+      </view>
+    </view>
+    <view class='list'>
+      <view class='area'>身高</view>
+      <view class='entering'>
+        <input placeholder='请填写身高' name="height" type="digit" />
+      </view>
+    </view>
+    <view class='list'>
+      <view class='area'>体重</view>
+      <view class='entering'>
+        <input placeholder='请填写体重' name="weight" type="digit" />
+      </view>
+    </view>
+    <view class='list'>
+      <view class='area'>从艺年限</view>
+      <view class='entering'>
+        <input placeholder='请填写从艺年限' name="jobyears" type="number" />
+      </view>
+    </view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='list'>
+      <view class='area'>薪资要求</view>
+      <view class='more'> 
+        <image src='../../../images/more.png'></image>
+      </view>
+    </picker>
+    <view class='list' bindtap='status'>
+      <view class='area'>职业状态</view>
+      <view class='more'>
+        <image src='../../../images/more.png'></image>
+      </view>
+    </view>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class='list'>
+      <view class='area'>目标城市</view>
+      <view class='more'>
+        <image src='../../../images/more.png'></image>
+      </view>
+    </picker>
+    <view class='introduce'>
+      <view class='title'>个人介绍</view>
+      <textarea name='introduction'></textarea>
+      <view class='number'>0/160</view>
+    </view>
+    <view class='works'>
+      <view class='title'>音乐作品</view>
+      <view class='add_box'>
+        <view class='add' bindtap='chooseVideo'>+
+          <image src=''></image>
+        </view>
+        <view class='data'>
+          <view class='song_name'>多余的温柔</view>
+          <view class='user'>不行啊手使用</view>
+          <view class='length'>04.02</view>
+        </view>
+      </view>
+      <view class='add_box'>
+        <view class='add' bindtap='chooseVideo'>+
+          <image src=''></image>
+        </view>
+        <view class='data'>
+          <view class='song_name'>多余的温柔</view>
+          <view class='user'>不行啊手使用</view>
+          <view class='length'>04.02</view>
+        </view>
+      </view>
+      <view class='add_box'>
+        <view class='add' bindtap='chooseVideo'>+
+          <image src=''></image>
+        </view>
+        <view class='data'>
+          <view class='song_name'>多余的温柔</view>
+          <view class='user'>不行啊手使用</view>
+          <view class='length'>04.02</view>
+        </view>
+      </view>
+    </view>
+    <view class='radio'>
+      <view class='title'>视频作品</view>
+      <view class='radio_works'>
+        <view class='radio_box' bindtap='chooseVideo'>+</view>
+        <view class='radio_box' bindtap='chooseVideo'>+</view>
+        <view class='radio_box' bindtap='chooseVideo'>+</view>
+      </view>
+    </view>
+    <view class='image'>
+      <view class='title'>图片作品</view>
+      <view class='image_works'>
+        <view class='image_box' bindtap='chooseImg' wx:if="{{!img[0]}}">+</view>
+        <view class='image_box' bindtap='chooseImg' wx:else><image mode='aspectFill' src='{{img[0]}}'></image></view>
+        <view class='image_box' bindtap='chooseImg'>+</view>
+        <view class='image_box' bindtap='chooseImg'>+</view>
+        <view class='image_box' bindtap='chooseImg'>+</view>
+        <view class='image_box' bindtap='chooseImg'>+</view>
+        <view class='image_box' bindtap='chooseImg'>+</view>
+      </view>
+    </view>
+    <button class='save' form-type="submit">保存</button>
+  </form>
+</view>

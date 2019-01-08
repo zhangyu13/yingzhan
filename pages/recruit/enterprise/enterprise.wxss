@@ -1,0 +1,296 @@
+/* pages/recruit/enterprise/enterprise.wxss */
+.enterprise{
+  width: 100%;
+  height: 100%;
+  background: #1D1E34;
+  overflow: hidden;      
+  font-family: "苹方";
+}
+.photo{
+  width: 100%;
+  height: 376rpx;
+  overflow: hidden;
+}
+.photo image{
+  width: 100%;
+  height: 100%;
+}
+.main{
+  background: #1D1E34;
+  position: fixed;
+  top:340rpx;
+  left:0;
+  width: 100%;
+  height: 868rpx;
+  border-radius: 30rpx 30rpx 0 0;
+}
+.list{
+  width: 100%;
+  height: 108rpx;
+  color: #fff;
+  line-height: 108rpx;
+}
+.border{
+  width: 54rpx;
+  height: 4rpx;
+  background: linear-gradient(to right,#C10EFE,#8909FB);
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  margin: 0 auto;
+}
+.item{
+  font-size: 30rpx;
+  float: left;
+  margin-left: 30rpx;
+  height: 100%;
+  position: relative;
+}
+.active{
+  color: #CD0EF8;
+}
+.option{
+  position: relative;
+  height: 912rpx;
+  overflow: scroll;
+  padding-bottom:200rpx;
+  box-sizing: border-box;
+}
+.option::-webkit-scrollbar {
+    display: none;
+}
+.business{
+  width: 100%;
+  height: 190rpx;
+  background: #2E2D4D;
+  padding:40rpx 30rpx;
+  box-sizing: border-box;
+}
+.area{
+  font-size: 32rpx;
+  color: #fff;
+}
+.address{
+  font-size: 28rpx;
+  color: #BDBDBD;
+  margin-top: 18rpx;
+  position: relative;
+  padding-left: 26rpx;
+  box-sizing: border-box;
+}
+.address .addressimg{
+  width: 22rpx;
+  height: 36rpx;
+  position: absolute;
+  top:4rpx;
+  left:0;
+}
+.address .more{
+  width: 20rpx;
+  height: 36rpx;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+.tag_box{
+  width: 100%;
+  height: 296rpx;
+  background: #2E2D4D;
+  margin-top: 22rpx;
+  padding:40rpx 30rpx;
+  box-sizing: border-box;
+}
+.title{
+  font-size: 32rpx;
+  color: #fff;
+}
+.label{
+  width: 144rpx;
+  height: 60rpx;
+  border:1rpx solid #BDBDBD;
+  color: #BDBDBD;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 60rpx;
+  float: left;
+  margin-right: 20rpx;
+  border-radius: 30rpx;
+  margin-top: 22rpx;
+}
+.info{
+  width: 100%;
+  height: auto;
+  background: #2E2D4D;
+  margin-top: 22rpx;
+  padding:40rpx 30rpx;
+  box-sizing: border-box;
+}
+.content{
+  font-size: 26rpx;
+  color: #BDBDBD;
+  margin-top: 24rpx;
+}
+.report{
+  width: 76rpx;
+  height: 76rpx;
+  position: fixed;
+  top:18rpx;
+  right: 24rpx;
+  z-index: 3;
+}
+.report image{
+  width: 100%;
+  height: 100%;
+}
+.text{
+  width: 100%;
+  height: 220rpx;
+  margin-bottom: 22rpx;
+  background: #2E2D4D;
+  position: relative;
+}
+.identity{
+  color: #FCFCFD;
+  font-size: 32rpx;
+  font-weight: bold;
+  float: left;
+  margin-top: 34rpx;
+  margin-left: 38rpx;
+}
+.price{
+  color: #D30EFE;
+  font-size: 28rpx;
+  font-weight: bold;
+  float: right;
+  margin-top:40rpx;
+  margin-right: 32rpx;
+}
+.city{
+  background: #676291;
+  height: 34rpx;
+  border-radius: 17rpx;
+  font-size: 22rpx;
+  color: #fff;
+  padding:0 10rpx;
+  line-height: 34rpx;
+  position: absolute;
+  top:90rpx;
+  left:38rpx;
+}
+.person{
+  position: absolute;
+  top:140rpx;
+  left:38rpx;
+}
+.pic{
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+.pic image{
+  width: 100%;
+  height: 100%;
+}
+.name{
+  font-size: 28rpx;
+  color: #fff;
+  float: left;
+  margin-left: 14rpx;
+}
+.communicate{
+  width: 162rpx;
+  height: 56rpx;
+  border-radius: 16rpx;
+  position: absolute;
+  bottom: 36rpx;
+  right: 30rpx;
+  color: #fff;
+  background: #D30EFE;
+  font-size: 28rpx;
+  line-height: 56rpx;
+  text-align: center;
+}
+.cover{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 24rpx;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.reason{
+  width: 702rpx;
+  height: 844rpx;
+  background: rgba(255,255,255,0.88);
+  border-radius: 20rpx;
+  position: absolute;
+  bottom:130rpx;
+  left:24rpx;
+  text-align: center;
+}
+.main .inform{
+  color: #767676;
+  font-size: 28rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+}
+.main .reason .list{
+  height: 94rpx;
+  line-height: 92rpx;
+  color: #000000;
+  font-size: 36rpx;
+  border-top: 1rpx solid #AAAAAA;
+}
+.main .cancel{
+  width: 702rpx;
+  height: 92rpx;
+  background: rgba(255,255,255,0.88);
+  border-radius: 20rpx;
+  position: absolute;
+  bottom:20rpx;
+  left:24rpx;
+  text-align: center;
+  line-height: 92rpx;
+}
+.success{
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+}
+.success .main{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 458rpx;
+  height: 244rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+}
+.success .prompt{
+  width: 100%;
+  height: 156rpx;
+  border-bottom: 1rpx solid #CACACA;
+  text-align: center;
+  padding: 44rpx 0 0;
+  box-sizing: border-box;
+  color: #3A3A3A;
+}
+.success .know{
+  text-align: center;
+  line-height: 88rpx;
+  color: #BC0EFE;
+}

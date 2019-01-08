@@ -1,0 +1,58 @@
+<!--pages/recruit/business/business.wxml-->
+<view class='business'>
+  <view class='money list'>
+    <view class='title'>薪资待遇</view>
+    <input placeholder='请填写薪资'></input>
+  </view>
+  <view class='address list'>
+    <view class='title'>工作地址</view>
+    <view class='more'>
+      <image src='../../../images/more.png'></image>
+    </view>
+  </view>
+  <view class='type list'>
+    <view class='title'>行业类别</view>
+    <view class='more'>
+      <image src='../../../images/more.png'></image>
+    </view>
+  </view>
+  <view class='position list'>
+    <view class='title'>招聘职位</view>
+    <input placeholder='请填写职位'></input>
+  </view>
+  <view class='position list'>
+    <view class='title'>企业ID</view>
+    <view class='id'>35888</view>
+  </view>
+  <view class='request'>
+    <view class='title'>职位要求</view>
+    <textarea></textarea>
+    <view class='number'>0/200</view>
+  </view>
+  <view class='tag_box'>
+    <view class='title'>工作标签</view>
+    <view class='tag'>
+      <view class='label'>工作稳定</view>
+      <view class='label'>包住</view>
+      <view class='label'>随时进场</view>
+      <view class='label'>月休两天</view>
+      <view class='label'>报销路费</view>
+      <view class='label'>压5结10</view>
+    </view>
+  </view>
+  <view class='report' bindtap='publish'>发布</view>
+  <view class='agree'>
+    <view class='left_img'></view>
+    <view class='click'>点击即同意</view>
+    <view class='agreement'>《用户协议条款》</view>
+  </view>
+  <view class='cover' wx:if="{{toast}}">
+    <view class='main'>
+      <view class='prompt'>
+        <view>发布成功</view>
+        <view>请返回查看</view>
+      </view>
+      <navigator url='/pages/main/index/index'><view class='know'>知道了</view></navigator>
+    </view>
+  </view>
+</view>

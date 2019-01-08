@@ -1,0 +1,69 @@
+<view class="findtab">
+  <view class='find'>
+    <input placeholder='搜索ID'></input>
+    <image class='find_icon' src='../../../images/find.png'></image>
+    <view class='empty'>×</view>
+    <view class='cancel'>取消</view>
+  </view>
+  <map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map>
+  <navigator url='/pages/request/means/means'><cover-view class='information'>
+    <cover-view class='left_img'>
+      <cover-image mode='aspectFill' class='img' src='{{information.img}}'></cover-image>
+    </cover-view>
+    <cover-image src='../../../images/find_type.png' class='img' mode='aspectFill' class='type'></cover-image>
+    
+      <cover-view class='data'>
+        <cover-view class='name'>{{information.name}}</cover-view>
+        <cover-view class='recruit'>
+          <cover-image class='img' src='../../../images/find_recruit.png' mode='aspectFill'></cover-image><cover-view class='write'>招聘</cover-view></cover-view>
+        <cover-view class='address'>
+          <cover-image class='img' src='../../../images/address_select.png' mode='aspectFill'></cover-image><cover-view class='addr'>{{information.address}}</cover-view></cover-view>
+        <cover-view class='tag'>
+          <cover-view class='label' wx:for="{{information.label}}" wx:key="{{index}}">{{information.label[index]}}</cover-view>
+          <!-- <view class='label'>DJ</view>
+          <view class='label'>灯光师</view> -->
+        </cover-view>
+      </cover-view>
+      <cover-view class='more'>
+        <cover-image class='img' src='../../../images/more.png' mode='aspectFill'></cover-image>
+      </cover-view>
+    
+  </cover-view></navigator>
+  <view class='tab'>
+    <navigator url='/pages/main/index/index'>
+      <view class='tab-list'>
+        <view class='img-box'>
+          <image src='../../../images/home_icon.png' mode='aspectFit'></image>
+        </view>
+        <view class='explain'>首页</view>
+      </view>
+    </navigator>
+
+    <navigator url='/pages/main/find/find'>
+      <view class='tab-list'>
+        <view class='img-box'>
+          <image src='../../../images/find_icon_active.png' mode='aspectFit'></image>
+        </view>
+        <view class='explain active'>发现</view>
+      </view>
+    </navigator>
+
+    <navigator url='/pages/main/message/message'>
+      <view class='tab-list'>
+        <view class='img-box'>
+          <image src='../../../images/message_icon.png' mode='aspectFit'></image>
+        </view>
+        <view class='explain'>消息</view>
+      </view>
+    </navigator>
+
+    <navigator url='{{person}}'>
+      <view class='tab-list'>
+        <view class='img-box'>
+          <image src='../../../images/person_icon.png' mode='aspectFit'></image>
+        </view>
+        <view class='explain'>我的</view>
+      </view>
+    </navigator>
+  </view>
+</view>

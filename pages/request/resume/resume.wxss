@@ -1,0 +1,209 @@
+/* pages/request/resume/resume.wxss */
+.resume{
+  width: 100%;
+  height: 100%;
+  background: #1D1E34;
+  overflow: hidden;
+  font-family: "苹方";
+}
+.portrait{
+  width: 100%;
+  height: 250rpx;
+  border-radius: 0 0 20rpx 20rpx;
+  overflow: hidden;
+  position: relative;
+}
+.background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.background image{
+  width: 100%;
+  height: 100%;
+}
+.covercolor{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom,#C829FF,#468FFF);
+  z-index: 2;
+  opacity: 0.88;
+}
+.pic{
+  width: 164rpx;
+  height: 164rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: auto;
+  z-index: 3;
+}
+.pic image{
+  width: 100%;
+  height: 100%;
+}
+.list{
+  width: 100%;
+  height: 112rpx;
+  border: 2rpx solid #3A3A3A;
+  color: #fff;
+  font-size: 30rpx;
+  /* font-family: "苹方"; */
+  text-align: left;
+  line-height: 112rpx;
+  position: relative;
+}
+.area{
+  float: left;
+  margin-left:30rpx;
+}
+.list input{
+  float: right;
+  margin-right: 28rpx;
+  text-align: right;
+  cursor: pointer;
+  margin-top: 30rpx;
+}
+.more{
+  text-align: right;
+  padding-right: 80rpx;
+  box-sizing: border-box;
+}
+.more image{
+  width: 20rpx;
+  height: 32rpx;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  margin: auto 0;
+  right:28rpx;
+}
+.introduce{
+  width: 100%;
+  height: 370rpx;
+  position: relative;
+}
+.title{
+  margin-left: 30rpx;
+  margin-top: 36rpx;
+  color: #fff;
+  font-size: 30rpx;
+}
+.introduce textarea{
+  border:1rpx solid #979797;
+  width: 668rpx;
+  height: 286rpx;
+  margin-top: 24rpx;
+  margin-left: 40rpx;
+}
+.introduce .number{
+  color: #fff;
+  font-size: 30rpx;
+  position: absolute;
+  bottom:24rpx;
+  right:58rpx;
+}
+.add_box{
+  width: 100%;
+  height: 144rpx;
+  padding:40rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+.add_box .add{
+  width: 144rpx;
+  height: 144rpx;
+  background: #373654;
+  border-radius: 10rpx;
+  float: left;
+  font-size: 64rpx;
+  text-align: center;
+  line-height: 144rpx;
+  color: #9F9F9F;
+}
+.add_box .data{
+  float: left;
+  padding-left: 22rpx;
+  box-sizing: border-box;
+}
+.data .song_name{
+  color: #FBFBFC;
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-top: 12rpx;
+}
+.data .user{
+  color: #CD0EF8;
+  font-size: 26rpx;
+  font-weight: bold;
+  margin-top: 6rpx;
+}
+.data .length{
+  color: #BDBDBD;
+  font-size: 20rpx;
+  margin-top: 20rpx;
+}
+.radio{
+  margin-top: 88rpx;
+}
+.radio_works{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding:24rpx 40rpx;
+  box-sizing: border-box;
+}
+.radio_box{
+  width: 206rpx;
+  height: 206rpx;
+  border-radius: 10rpx;
+  color: #9F9F9F;
+  font-size: 80rpx;
+  text-align: center;
+  line-height: 206rpx;
+  background: #373654;
+}
+.image{
+  margin-top: 88rpx;
+}
+.image_works{
+  width: 100%;
+  height: 480rpx;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding:24rpx 40rpx;
+  box-sizing: border-box;
+}
+.image_box{
+  width: 206rpx;
+  height: 206rpx;
+  border-radius: 10rpx;
+  color: #9F9F9F;
+  font-size: 80rpx;
+  text-align: center;
+  line-height: 206rpx;
+  background: #373654;
+}
+.image_box image{
+  width: 100%;
+  height: 100%;
+}
+.save{
+  width: 702rpx;
+  height: 88rpx;
+  text-align: center;
+  line-height: 88rpx;
+  margin: 80rpx auto;
+  background: linear-gradient(to right,#C10EFE,#8909FB);
+  border-radius: 44rpx;
+  color: #fff;
+  font-size: 36rpx;
+}

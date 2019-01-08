@@ -1,0 +1,90 @@
+<view class='person'>
+  <view class='person_top'>
+    <view class='background'><image mode='aspectFill' src='{{userInfo.image}}'></image></view>
+    <view class='covercolor'></view>
+    <view class='person_pic'>
+      <image class='person_img' src='{{userInfo.image}}'></image>
+      <image class='vip_img' src='{{userInfo.vipimg}}'></image>
+    </view>
+    <view class='information'>
+      <view class='username'>{{userInfo.username}}
+        <image src='../../../images/person_girl.png'></image>
+      </view>
+      <view class='person_id'>{{userInfo.id}}</view>
+      <view class='tag'>
+        <view class='label' wx:for="{{userInfo.clabel}}" wx:for-item="{{list}}" wx:key="{{index}}">{{userInfo.clabel[index]}}</view>
+        <!-- <view class='label'>爱浪漫</view>
+        <view class='label'>敏感</view> -->
+      </view>
+      <image class='more' src='../../../images/more.png'></image>
+    </view>
+  </view>
+  <view class='person_center'>
+    <navigator url='/pages/vip/personal/personal'><view class='content'>
+      <image class='list_imgl' src='../../../images/person_member.png' mode='aspectFit'></image>
+      <view class='list'>颖站会员</view>
+      <image class='list_imgr' src='../../../images/more.png'></image>
+    </view></navigator>
+    <navigator url='/pages/request/resume/resume'><view class='content resume'>
+      <image class='list_imgl' src='../../../images/person_resume.png' mode='aspectFit'></image>
+      <view class='list'>我的简历</view>
+      <image class='list_imgr' src='../../../images/more.png'></image>
+    </view></navigator>
+    <navigator url='/pages/recruit/publish/publish'><view class='content'>
+      <image class='list_imgl' src='../../../images/person_pulish.png' mode='aspectFit'></image>
+      <view class='list'>发布管理</view>
+      <image class='list_imgr' src='../../../images/more.png'></image>
+    </view></navigator>
+    <navigator url='/pages/select/personal/personal'><view class='content'>
+      <image class='list_imgl' src='../../../images/person_cut.png' mode='aspectFit'></image>
+      <view class='list'>切换身份</view>
+      <image class='list_imgr' src='../../../images/more.png'></image>
+    </view></navigator>
+    <navigator url='/pages/request/resume/resume'><view class='content'>
+      <image class='list_imgl' src='../../../images/person_invite.png' mode='aspectFit'></image>
+      <view class='list'>邀请企业/个人</view>
+      <image class='list_imgr' src='../../../images/more.png'></image>
+    </view></navigator>
+    <navigator url='/pages/request/resume/resume'><view class='content'>
+      <image class='list_imgl' src='../../../images/person_card.png' mode='aspectFit'></image>
+      <view class='list'>集卡活动</view>
+      <image class='list_imgr' src='../../../images/more.png' mode='aspectFit'></image>
+    </view></navigator>
+    <navigator url='/pages/system/install/install'>
+      <view class='content'>
+        <image class='list_imgl' src='../../../images/person_set.png' mode='aspectFit'></image>
+        <view class='list'>设置</view>
+        <image class='list_imgr' src='../../../images/more.png'></image>
+      </view>
+    </navigator>
+  </view>
+  <view class='tab'>
+    <navigator url='/pages/main/index/index'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/home_icon.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain'>首页</view>
+    </view></navigator>
+
+    <navigator url='/pages/main/find/find'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/find_icon.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain'>发现</view>
+    </view></navigator>
+
+    <navigator url='/pages/main/message/message'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/message_icon.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain'>消息</view>
+    </view></navigator>
+
+    <navigator url='/pages/main/person/person'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/person_icon_active.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain active'>我的</view>
+    </view></navigator>
+  </view>
+</view>

@@ -1,0 +1,181 @@
+/* pages/request/information/information.wxss */
+.information{
+  width: 100%;
+  background: #1D1E34;
+  font-family: "苹方";
+  padding-top: 150rpx;
+}
+.find{
+  width: 100%;
+  padding:22rpx 0 28rpx;
+  height: 60rpx;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 3;
+  background: #1D1E34;
+}
+.find input{
+  width: 622rpx;
+  height: 100%;
+  border-radius: 30rpx;
+  padding:0 0 0 54rpx;
+  background: #EEEEEE;
+  font-size: 24rpx;
+  color: #B6B6B6;
+  box-sizing: border-box;
+  margin-left: 30rpx;
+}
+.find image{
+  position: absolute;
+  top:40rpx;
+  left:46rpx;
+  width: 24rpx;
+  height: 24rpx;
+}
+.empty{
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 50%;
+  background: #C8C8C8;
+  color: #fff;
+  position: absolute;
+  top:40rpx;
+  right:110rpx;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 28rpx;
+}
+.cancel{
+  color: #BDBDBD;
+  font-size: 28rpx;
+  position: absolute;
+  top:28rpx;
+  right: 24rpx;
+}
+.select{
+  background: #1D1E34;
+  height: 68rpx;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  top:100rpx;
+  left:0;
+  display: flex;
+  justify-content: space-around;
+  color: #BDBDBD;
+  font-size: 28rpx;
+}
+.area,.type,.job{
+  position: relative;
+}
+.active{
+  color: #CD0EF8;
+}
+.select image{
+  width: 14rpx;
+  height: 8rpx;
+  position: absolute;
+  top:20rpx;
+  right:-20rpx;
+}
+.item{
+  width: 704rpx;
+  height: 186rpx;
+  margin: 20rpx auto 0;
+  background: #2E2D4D;
+  border-radius: 16rpx;
+  overflow: hidden;
+  position: relative;
+}
+.left_img{
+  width: 144rpx;
+  height: 144rpx;
+  border-radius: 50%;
+  margin: 22rpx 24rpx 0 20rpx;
+  float: left;
+  overflow: hidden;
+}
+.left_img image{
+  width: 100%;
+  height: 100%;
+}
+.data{
+  width: 280rpx;
+  float: left;
+  margin-top: 22rpx;
+  overflow: hidden;
+}
+.data .name{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fff;
+  padding:0 10rpx 0 0;
+  height: 46rpx;
+  float: left;
+  overflow: hidden;
+}
+.data .price{
+  font-size: 20rpx;
+  font-weight: bold;
+  background: #CD0EF8;
+  float: right;
+  color: #fff;
+  border-radius: 30rpx;
+  margin-top: 8rpx;
+  padding: 0 20rpx;
+}
+.tag{
+  height: 28rpx;
+  margin-top: 60rpx;
+}
+.label{
+  padding:0 12rpx;
+  height: 28rpx;
+  border-radius: 14rpx;
+  color: #fff;
+  font-family: "苹方";
+  font-size: 20rpx;
+  background: #676291;
+  text-align: center;
+  line-height: 28rpx;
+  float: left;
+  margin-right: 4rpx;
+}
+.address{
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  color: #BDBDBD;
+  margin-top: 14rpx;
+  position: relative;
+  padding-left: 26rpx;
+  box-sizing: border-box;
+}
+.address image{
+  width: 20rpx;
+  height: 32rpx;
+  position: absolute;
+  top:4rpx;
+  left: 0;
+}
+.categorize{
+  position: absolute;
+  top:22rpx;
+  right:20rpx;
+  width: 150rpx;
+  height: 122rpx;
+  color: #fff;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: right;
+}
+.categorize .title{
+  height: 46rpx;
+}
+.salary{
+  color: #CD0EF8;
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-top: 8rpx;
+}

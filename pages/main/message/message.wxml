@@ -1,0 +1,54 @@
+<view class="message">
+  <view class='find'>
+    <input placeholder='搜索商家和姓名'></input>
+    <image class='find_icon' src='../../../images/find.png'></image>
+  </view>
+  <view class='title'>联系人</view>
+  <view class='list'>
+    <view class='item' wx:for="{{message}}" wx:key="{{index}}" data-id="{{item.id}}" bindtouchstart="start" bindtouchmove="move" bindtouchend="end" style='right:{{item.right}}'>
+      <view class='pic'>
+        <image src='../../../images/message_pic.png'></image>
+      </view>
+      <view class='data'>
+        <view class='name'>{{item.name}}</view>
+        <view class='business'>{{item.business}}.{{item.job}}</view>
+        <view class='content'>{{item.content}}</view>
+      </view>
+      <view class='time'>{{item.time}}</view>
+      <view class='collect'>
+        <image wx:if="{{item.is_collect}}" src='../../../images/massage_collect.png'></image>
+      </view>
+      <view class='del' data-id='{{item.id}}' bindtap='del'>删除</view>
+    </view>
+  </view>
+  <view class='tab'>
+    <navigator url='/pages/main/index/index'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/home_icon.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain'>首页</view>
+    </view></navigator>
+
+    <navigator url='/pages/main/find/find'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/find_icon.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain'>发现</view>
+    </view></navigator>
+
+    <navigator url='/pages/main/message/message'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/message_icon_active.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain active'>消息</view>
+    </view></navigator>
+
+    <navigator url='/pages/main/person/person'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/person_icon.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain'>我的</view>
+    </view></navigator>
+  </view>
+</view>
+

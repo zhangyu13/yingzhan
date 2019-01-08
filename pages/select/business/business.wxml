@@ -1,0 +1,8 @@
+<!--pages/select/business/business.wxml-->
+<view class='business'>
+  <view class='select_img'>
+    <image src='../../../images/select_business.png'></image>
+  </view>
+  <view class='select'>您当前的身份是“企业”</view>
+  <view class='cut'>切换为“个人”身份</view>
+</view>

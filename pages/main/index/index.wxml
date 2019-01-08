@@ -1,0 +1,73 @@
+<view class="home_box">
+  <swiper class='home_img_box'indicator-dots='true'
+  autoplay='true'
+  interval='1000'
+  duration='500'
+  circular='true'>
+    <swiper-item wx:for="{{banner}}" wx:key="{{index}}"><image class='home_img' src='{{item}}'></image></swiper-item>
+  </swiper>
+  <navigator url='/pages/recruit/information/information'>
+    <view class='home_img_zhao'>
+      <image class='home_img' src='../../../images/home_center.png'></image>
+      <view>
+        <view class='pic'>
+          <image class='home_img' src='../../../images/zhao.png'></image>
+        </view>
+        <view class='title'>招聘信息</view>
+        <view class='home_icon'>
+          <image class='home_img' src='../../../images/more.png'></image>
+        </view>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='/pages/request/information/information'>
+    <view class='home_img_qiu'>
+      <image class='home_img' src='../../../images/home_bottom.png'></image>
+      <view>
+        <view class='pic'>
+          <image class='home_img' src='../../../images/qiu.png'></image>
+        </view>
+        <view class='title'>求职艺人</view>
+        <view class='home_icon'>
+          <image class='home_img' src='../../../images/more.png'></image>
+        </view>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='{{recruit}}'><view class='home_bottom'>
+    <view class='home_release'>
+      <image class='home_img' src='../../../images/home_release.png'></image>
+      <image class='find' src='../../../images/release_center.png'></image>
+      <view class='or'>招聘发布</view>
+    </view>
+  </view></navigator>
+  <view class='tab'>
+    <navigator url='/pages/main/index/index'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/home_icon_active.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain active'>首页</view>
+    </view></navigator>
+
+    <navigator url='/pages/main/find/find'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/find_icon.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain'>发现</view>
+    </view></navigator>
+
+    <navigator url='/pages/main/message/message'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/message_icon.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain'>消息</view>
+    </view></navigator>
+
+    <navigator url='{{person}}'><view class='tab-list'>
+      <view class='img-box'>
+        <image src='../../../images/person_icon.png' mode='aspectFit'></image>
+      </view>
+      <view class='explain'>我的</view>
+    </view></navigator>
+  </view>
+</view>

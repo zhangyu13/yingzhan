@@ -1,0 +1,29 @@
+<!--pages/recruit/latest/latest.wxml-->
+<view class='latest'>
+  <view class='pic'>
+    <view class='title'>头像</view>
+    <view class='pic_img'>
+      <image src='../../../images/1.jpg'></image>
+    </view>
+  </view>
+  <view class='position'>
+    <view class='title'>职位</view>
+    <view class='more'>
+      <image src='../../../images/more.png'></image>
+    </view>
+  </view>
+  <view class='money'>
+    <view class='title'>薪资</view>
+    <view class='more'>
+      <image src='../../../images/more.png'></image>
+    </view>
+  </view>
+  <view class='address'>
+    <view class='title'>地址</view>
+    <view class='write'>
+      <input placeholder='请填写地址'></input>
+      <image src='../../../images/address.png'></image>
+    </view>
+  </view>
+  <navigator url='/pages/recruit/publish/publish'><view class='publish_job'>发布新职位</view></navigator>
+</view>

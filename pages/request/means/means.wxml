@@ -1,0 +1,39 @@
+<!--pages/request/means/means.wxml-->
+<view class='means'>
+  <navigator url='{{info_url}}'>
+    <view class='list'>
+      <view class='item'>
+        <view class='left_img'>
+          <image src='{{recruit.img}}' mode='aspectFill'></image>
+        </view>
+        <view class='data'>
+          <view class='name'>{{recruit.name}}</view>
+          <view class='id'>ID：{{recruit.id}}</view>
+          <view class='tag'>
+            <view class='label type'>{{recruit.label}}</view>
+            <view class='label welfare' wx:for="{{recruit.clabel}}" wx:for-item="{{list}}" wx:key="{{index}}">{{recruit.clabel[index]}}</view>
+            <!-- <view class='label welfare'>包住</view> -->
+          </view>
+        </view>
+        <view class='categorize'>
+          <view class='title'>{{recruit.job}}</view>
+          <image src='../../../images/position.png'></image>
+        </view>
+      </view>
+    </view>
+  </navigator>
+  <view class='price'>
+    <view class='area'>薪资要求</view>
+    <view class='request'>{{recruit.money}}</view>
+  </view>
+  <view class='demand'>
+    <view class='area'>职位要求</view>
+    <view class='content'>{{recruit.request}}</view>
+  </view>
+  <view class='address'>
+    <view class='area'>地址</view>
+    <view class='detailed'>{{recruit.address}}</view>
+  </view>
+  <view class='time'>发布时间：{{recruit.time}}</view>
+  <view class='communicate'>立即沟通</view>
+</view>

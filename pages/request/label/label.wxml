@@ -1,0 +1,8 @@
+<!--pages/request/label/label.wxml-->
+<view class='label'>
+<form bindsubmit='save'>
+  <textarea placeholder='请输入自定义标签（3~5字）' name="content"></textarea>
+  <view class='example'>示例：声音控、千杯不醉、有车有房、找男友 </view>
+  <button class='save' form-type="submit">保存</button></form>
+</view>
+<!-- /pages/request/perfect/perfect -->

@@ -1,0 +1,61 @@
+<!--pages/product/info.wxml-->
+<view class='info'>
+  <view class='info_product'>
+    <image class='info_img'></image>
+  </view>
+  <view class='price_box'>
+    <view class='nowprice'>￥50.00+100Y币</view>
+    <view class='price'>￥{{list.price}}.00</view>
+    <view class='border'></view>
+  </view>
+  <view class='product'>
+    <view class='title'>麦克风书报刊吃烧烤好看还是昵称你看你看昵称 那你就没撒了穿男长裤男</view>
+    <view class='additional'>
+      <view class='mail color'>快递：包邮</view>
+      <view class='sale color'>月售3333件</view>
+    </view>
+  </view>
+  <view class='confirm' bindtap='translate'>去兑换</view>
+  <view class='frame' wx:if="{{frame}}">
+    <view class='main'>
+      <view class='commodity'>
+        <view class='goods'>
+          <image class='info_img'></image>
+        </view>
+        <view class='writing'>已选择：麦克风</view>
+        <view class='characters'>库存78989</view>
+      </view>
+      <view class='nowprice'>￥50.00+100Y币</view>
+      <view class='distribution'>
+        <view class='area'>配送区域</view>
+        <view class='remarks'>（配送地可能会影响库存，请正确选择）</view>
+      </view>
+      <view class='address'>地址：上海市名航区
+        <image></image>
+      </view>
+      <view class='buy'>
+        <view class='area'>购买数量</view>
+        <view class='reduce' bindtap='reduce'>-</view>
+        <view class='num'>{{num}}</view>
+        <view class='add' bindtap='add'>+</view>
+      </view>
+      <view class='way'>
+        <view class='area'>配送方式</view>
+        <view class='delivery'>快递 免邮</view>
+        <view class='icon'>
+          <image></image>
+        </view>  
+      </view>
+    </view>
+    <view class='convert' bindtap='wechat'>确认兑换</view>
+  </view>
+  <view class='cover' wx:if="{{wechat}}">
+    <view class="main">
+      <view class='we'>
+        <view class='contact'>联系客服微信</view>
+        <view class='number'>eyujb6788990</view>
+      </view>
+      <view class='know' bindtap='close'>知道了</view>
+    </view>
+  </view>
+</view>

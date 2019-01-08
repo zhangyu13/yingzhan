@@ -1,0 +1,137 @@
+<!--pages/request/information/information.wxml-->
+<view class='information'>
+  <view class='find'>
+    <input placeholder='搜索ID'></input>
+    <image class='find_icon' src='../../../images/find.png'></image>
+    <view class='empty'>×</view>
+    <view class='cancel'>取消</view>
+  </view>
+  <view class='select'>
+    <view class='area active'>地区
+      <image src='../../../images/slide_select.png'></image>
+    </view>
+    <view class='type'>类别
+      <image src='../../../images/unselect.png'></image>
+    </view>
+    <view class='job'>职位
+      <image src='../../../images/unselect.png'></image>
+    </view>
+  </view>
+  <view class='list'>
+  <navigator url='/pages/request/preview/preview'>
+    <view class='item' wx:for="{{requestlist}}" wx:key="{{index}}">
+      <view class='left_img'><image src='{{item.img}}'></image></view>
+      <view class='data'>
+        <view class='name'>{{item.name}}</view>
+        <view class='price'>{{item.label}}</view>
+        <view class='tag'>
+          <view class='label' wx:for="{{item.clabel}}" wx:for-item="list" wx:key="{{index}}">{{item.clabel[index]}}</view>
+          <!-- <view class='label'>爱玩</view>
+          <view class='label'>时尚</view> -->
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        {{item.address}}</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>{{item.job}}</view>  
+        <view class='salary'>{{item.money}}</view>
+      </view>
+    </view></navigator>
+    <!-- <view class='item'>
+      <view class='left_img'><image src='../../../images/2.jpg'></image></view>
+      <view class='data'>
+        <view class='name'>小李</view>
+        <view class='price'>2年</view>
+        <view class='tag'>
+          <view class='label'>伪文青</view>
+          <view class='label'>执行力强</view>
+          <view class='label'>旅行</view>
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        四川成都</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>VJ</view>  
+        <view class='salary'>10k-15k</view>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left_img'><image src='../../../images/3.jpg'></image></view>
+      <view class='data'>
+        <view class='name'>夜店小王子</view>
+        <view class='price'>2年</view>
+        <view class='tag'>
+          <view class='label'>工作狂</view>
+          <view class='label'>重金属</view>
+          <view class='label'>敏感</view>
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        北京</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>蹦迪</view>  
+        <view class='salary'>10k-15k</view>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left_img'><image src='../../../images/4.jpg'></image></view>
+      <view class='data'>
+        <view class='name'>张某某</view>
+        <view class='price'>2年</view>
+        <view class='tag'>
+          <view class='label'>射手座</view>
+          <view class='label'>稳重</view>
+          <view class='label'>成熟</view>
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        乌鲁木齐</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>歌手</view>  
+        <view class='salary'>10k-15k</view>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left_img'><image src='../../../images/4.jpg'></image></view>
+      <view class='data'>
+        <view class='name'>张某某</view>
+        <view class='price'>2年</view>
+        <view class='tag'>
+          <view class='label'>射手座</view>
+          <view class='label'>稳重</view>
+          <view class='label'>成熟</view>
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        乌鲁木齐</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>歌手</view>  
+        <view class='salary'>10k-15k</view>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left_img'><image src='../../../images/4.jpg'></image></view>
+      <view class='data'>
+        <view class='name'>张某某</view>
+        <view class='price'>2年</view>
+        <view class='tag'>
+          <view class='label'>射手座</view>
+          <view class='label'>稳重</view>
+          <view class='label'>成熟</view>
+        </view>
+        <view class='address'>
+          <image src='../../../images/address.png'></image>
+        乌鲁木齐</view>
+      </view>
+      <view class='categorize'>
+        <view class='title'>歌手</view>  
+        <view class='salary'>10k-15k</view>
+      </view>
+    </view> -->
+  </view>
+</view>

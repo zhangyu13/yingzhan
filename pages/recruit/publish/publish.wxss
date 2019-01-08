@@ -1,0 +1,127 @@
+/* pages/recruit/publish/publish.wxss */
+.publish{
+  width: 100%;
+  height: 1206rpx;
+  background: #1D1E34;
+  overflow: hidden;
+  font-family: "苹方";
+}
+.item{
+  width: 704rpx;
+  margin:0 auto;
+  height: 196rpx;
+  background: #2E2D4D;
+  border-radius: 16rpx;
+  margin-top: 22rpx;
+  position: relative;
+}
+.left_img{
+  width: 122rpx;
+  height: 122rpx;
+  border-radius: 50%;
+  margin: 40rpx 24rpx 0 20rpx;
+  float: left;
+  overflow: hidden;
+}
+.left_img image{
+  width: 100%;
+  height: 100%;
+}
+.data{
+  width: 380rpx;
+  float: left;
+  margin-top: 50rpx;
+}
+.data .name{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fff;
+  width: 120rpx;
+  float: left;
+}
+.data .price{
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #CD0EF8;
+  width: 180rpx;
+  float: right;
+  margin-top: 4rpx;
+}
+.tag{
+  height: 28rpx;
+  margin-top: 60rpx;
+}
+.label{
+  padding:0 10rpx;
+  box-sizing: border-box;
+  height: 28rpx;
+  border-radius: 14rpx;
+  color: #fff;
+  font-family: "苹方";
+  font-size: 20rpx;
+  background: #676291;
+  text-align: center;
+  float: left;
+  line-height: 28rpx;
+}
+.publish_job{
+  width: 702rpx;
+  height: 88rpx;
+  background: linear-gradient(to right,#C10EFE,#8909FB);
+  font-size: 36rpx;
+  color:#fff;
+  text-align: center;
+  line-height: 88rpx;
+  border-radius: 44rpx;
+  position: fixed;
+  bottom:58rpx;
+  left:0;
+  right: 0;
+  margin:0 auto;
+}
+.details{
+  position: absolute;
+  top:74rpx;
+  right: 24rpx;
+  width: 46rpx;
+  height: 46rpx;
+  border-radius: 50%;
+}
+.details image{
+  width: 100%;
+  height: 100%;
+}
+.cover{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top:0;
+  left:0;
+}
+.main{
+  width: 100%;
+  height: 292rpx;
+  position: absolute;
+  bottom:0;
+  left:0;
+  background: #EAEAEA;
+  text-align: center;
+  line-height: 92rpx;
+  font-size: 36rpx;
+}
+.share,.cancel{
+  width: 100%;
+  height: 92rpx;
+  background: #fff;
+  color: #000;
+}
+.cancel{
+  font-weight: bold;
+  margin-top: 16rpx;
+}
+.del{
+  color: #FF0000;
+  border-top: 1rpx solid #D6D6D6;
+  background: #fff;
+}

@@ -1,0 +1,264 @@
+/* pages/product/info.wxss */
+.info{
+  width: 100%;
+  height: 100%;
+  background: #2E2D4D;
+  overflow: hidden;
+}
+.info_img{
+  width: 100%;
+  height: 100%;
+}
+.info_product{
+  width: 100%;
+  height: 676rpx;
+  background: #fff;
+}
+.price_box{
+  width: 100%;
+  height: 128rpx;
+  border-bottom: 20rpx solid #1D1E34;
+  line-height: 128rpx;
+  position: relative;
+}
+.nowprice{
+  margin-left: 48rpx;
+  color: #D30EFE;
+  font-family: "苹方";
+  font-size: 34rpx;
+  float: left;
+}
+.price{
+  margin-left: 40rpx;
+  font-family: "苹方";
+  font-size: 30rpx;
+  color: #9F9F9F;
+  float: left;
+}
+.border{
+  color: #8D8D8D;
+  width: 132rpx;
+  height: 4rpx;
+  position: absolute;
+  top:62rpx;
+  left:200rpx;
+  z-index: 20;
+}
+.product{
+  height: 280rpx;
+  padding:40rpx;
+}
+.product .title{
+  color: #F5F5F7;
+  font-size: 34rpx;
+  font-weight: bold;
+  font-family: "苹方";
+}
+.color{
+  color: #9F9F9F;
+  font-size: 30rpx;
+  font-family: "苹方";
+  float: left;
+  margin-top: 20rpx;
+}
+.sale{
+  margin-left: 106rpx;
+}
+.confirm{
+  width:100%;
+  height: 88rpx;
+  color: #F5F5F7;
+  font-family: "苹方";
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 88rpx;
+  position: fixed;
+  bottom:0;
+  left:0;
+  background: linear-gradient(to right,#C10EFE,#8909FB);
+  z-index: 8;
+}
+.frame{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+}
+.frame .main{
+  width: 100%;
+  height: 992rpx;
+  background: #fff;
+  position: fixed;
+  bottom:0;
+  left:0;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.commodity{
+  width: 100%;
+  height: 190rpx;
+  position: relative;
+  margin:28rpx 0 0 28rpx;
+}
+.goods{
+  width: 190rpx;
+  height: 190rpx;
+  float: left;
+  border: 2rpx solid #C6C6C6;
+  border-radius: 10rpx;
+}
+.writing{
+  position: absolute;
+  bottom:38rpx;
+  left:230rpx;
+  color: #484848;
+  font-family: "苹方";
+  font-size: 28rpx;
+}
+.characters{
+  position: absolute;
+  bottom:0;
+  left:230rpx;
+  color: #8F8F8F;
+  font-family: "苹方";
+  font-size: 24rpx;
+}
+.frame .nowprice{
+  width: 100%;
+  margin-left: 28rpx;
+  margin-top: 40rpx;
+}
+.distribution{
+  margin-top: 120rpx;
+}
+.area{
+  font-family: "苹方";
+  font-size: 30rpx;
+  color: #1E1E1E;
+  float: left;
+  margin-left: 28rpx;
+}
+.remarks{
+  font-family: "苹方";
+  font-size: 26rpx;
+  color: #BDBDBD;
+  float: left;
+  margin-top: 4rpx;
+}
+.address{
+  margin-left: 28rpx;
+  width: 100%;
+  height: 30rpx;
+  margin-top: 190rpx;
+  color: #8F8F8F;
+  font-family: "苹方";
+  font-size: 30rpx;
+  
+  padding-bottom: 40rpx;
+}
+.buy{
+  position: relative;
+  border-bottom: 2rpx solid #9B9B9B;
+}
+.buy .area{
+  margin-top: 40rpx;
+}
+.reduce{
+  width: 46rpx;
+  height: 46rpx;
+  background: #E1E1E1;
+  color: #8F8F8F;
+  text-align: center;
+  line-height: 46rpx;
+  font-size: 40rpx;
+  position: absolute;
+  right: 158rpx;
+  top:40rpx;
+}
+.num{
+  position: absolute;
+  right: 114rpx;
+  top:40rpx;
+}
+.add{
+  width: 46rpx;
+  height: 46rpx;
+  background: #E1E1E1;
+  color: #8F8F8F;
+  text-align: center;
+  line-height: 46rpx;
+  font-size: 40rpx;
+  position: absolute;
+  right: 46rpx;
+  top:40rpx;
+}
+.way{
+  margin-top: 100rpx;
+}
+.delivery{
+  font-family: "苹方";
+  font-size: 26rpx;
+  color: #1E1E1E;
+  float: right;
+  margin-right: 90rpx;
+  margin-top:10rpx;
+}
+.convert{
+  width:100%;
+  height: 88rpx;
+  color: #F5F5F7;
+  font-family: "苹方";
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 88rpx;
+  position: fixed;
+  bottom:0;
+  left:0;
+  background: linear-gradient(to right,#C10EFE,#8909FB);
+  z-index: 10;
+}
+.cover{
+  z-index: 12;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.cover .main{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 460rpx;
+  height: 244rpx;
+  background: #fff;
+  border-radius: 8rpx;
+}
+.we{
+  width: 100%;
+  height: 156rpx;
+  border-bottom: 1rpx solid #CACACA;
+  text-align: center;
+  font-size: 28rpx;
+  overflow: hidden;
+}
+.we .contact{
+  color: #3A3A3A;
+  margin-top: 46rpx;
+}
+.we .number{
+  color: #CF00FF;
+  margin-top: 10rpx;
+}
+.main .know{
+  color: #BC0EFE;
+  font-size: 28rpx;
+  margin-top: 24rpx;
+  text-align: center;
+}

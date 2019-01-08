@@ -1,0 +1,14 @@
+<!--pages/main/select/select.wxml-->
+<view class='select'>
+  <view class='pic'>
+    <image src='../../../images/business.png'></image>
+  </view>
+  <navigator url='/pages/main/index/index?loginIdType=1'><button class='option' open-type='getUserInfo' bindgetuserinfo="onGotUserInfo">我是企业</button></navigator>
+  <view class='or'>或者
+    <image src="../../../images/line.png"></image>
+  </view>
+  <view class='pic'>
+    <image src='../../../images/personal.png'></image>
+  </view>
+  <navigator url='/pages/main/index/index?loginIdType=0'><button class='option' open-type='getUserInfo' bindgetuserinfo="onGotUserInfo">我是个人</button></navigator>
+</view>

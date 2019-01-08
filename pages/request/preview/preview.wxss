@@ -1,0 +1,268 @@
+/* pages/request/resume/resume.wxss */
+.preview{
+  width: 100%;
+  height: 100%;
+  background: #1D1E34;
+  overflow: hidden;
+  font-family: "苹方";
+}
+.portrait{
+  width: 100%;
+  height: 250rpx;
+  border-radius: 0 0 20rpx 20rpx;
+  overflow: hidden;
+  position: relative;
+}
+.background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.background image{
+  width: 100%;
+  height: 100%;
+}
+.covercolor{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom,#C829FF,#468FFF);
+  z-index: 2;
+  opacity: 0.88;
+}
+.pic{
+  width: 164rpx;
+  height: 164rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top:46rpx;
+  left:34rpx;
+  z-index: 3;
+}
+.pic image{
+  width: 100%;
+  height: 100%;
+}
+.news{
+  width: 380rpx;
+  height: 200rpx;
+  position: absolute;
+  top:50rpx;
+  left:250rpx;
+  z-index: 3;
+}
+.name{
+  color: #fff;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.name image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.experience{
+  color: #fff;
+  font-weight: normal;
+  font-size: 28rpx;
+  margin-top: 6rpx;
+}
+.basic{
+  width: 100%;
+  height: 44rpx;
+  color: #fff;
+  font-weight: normal;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rpx; 
+}
+.age,.stature,.weight{
+  line-height: 44rpx;
+  position: relative;
+  padding-left: 36rpx;
+}
+.basic image{
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  top:8rpx;
+  left: 0;
+}
+.report{
+  width: 76rpx;
+  height: 76rpx;
+  position: absolute;
+  top:18rpx;
+  right: 24rpx;
+  z-index: 3;
+}
+.report image{
+  width: 100%;
+  height: 100%;
+}
+.list{
+  width: 100%;
+  height: 130rpx;
+  position: relative;
+  color: #fff;
+  font-size: 32rpx;
+  text-align: left;
+  line-height: 130rpx;
+  overflow: hidden;
+  background: #2E2D4D;
+  margin-top: 20rpx;
+}
+.status,.city{
+  color: #BDBDBD;
+  font-size: 28rpx;
+  text-align: right;
+  margin-right: 28rpx;
+}
+.list .money{
+  color: #CD0EF8;
+  font-weight: bold;
+  font-size: 28rpx;
+  text-align: right;
+  margin-right: 28rpx;
+}
+.self{
+  background: #2E2D4D;
+  width: 100%;
+  height: 270rpx;
+  position: relative;
+  color: #fff;
+  font-size: 32rpx;
+  text-align: left;
+  line-height: 112rpx;
+  overflow: hidden;
+}
+.area{
+  float: left;
+  margin-left:30rpx;
+}
+.introduce{
+  color: #BDBDBD;
+  font-size: 28rpx;
+  margin-top: 112rpx;
+  line-height: 40rpx;
+  width: 100%;
+  padding:0 28rpx;
+  box-sizing: border-box;
+}
+.title{
+  margin-left: 30rpx;
+  margin-top: 36rpx;
+  color: #fff;
+  font-size: 32rpx;
+}
+.works{
+  background: #2E2D4D;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  padding-bottom: 80rpx;
+}
+.add_box{
+  width: 100%;
+  height: 144rpx;
+  padding:40rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+.add_box .add{
+  width: 144rpx;
+  height: 144rpx;
+  background: #373654;
+  border-radius: 10rpx;
+  float: left;
+  font-size: 64rpx;
+  text-align: center;
+  line-height: 144rpx;
+  color: #9F9F9F;
+}
+.add_box .data{
+  float: left;
+  padding-left: 22rpx;
+  box-sizing: border-box;
+}
+.data .song_name{
+  color: #FBFBFC;
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-top: 12rpx;
+}
+.data .user{
+  color: #CD0EF8;
+  font-size: 26rpx;
+  font-weight: bold;
+  margin-top: 6rpx;
+}
+.data .length{
+  color: #BDBDBD;
+  font-size: 20rpx;
+  margin-top: 20rpx;
+}
+.radio{
+  padding-top: 10rpx;
+  padding-bottom: 40rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  background: #2E2D4D;
+}
+.radio_works{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding:24rpx 40rpx;
+  box-sizing: border-box;
+}
+.radio_box{
+  width: 206rpx;
+  height: 206rpx;
+  border-radius: 10rpx;
+  color: #9F9F9F;
+  font-size: 80rpx;
+  text-align: center;
+  line-height: 206rpx;
+  background: #373654;
+}
+.image{
+  background: #2E2D4D;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  padding-bottom: 40rpx;
+}
+.image_works{
+  width: 100%;
+  height: 480rpx;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding:24rpx 40rpx;
+  box-sizing: border-box;
+}
+.image_box{
+  width: 206rpx;
+  height: 206rpx;
+  border-radius: 10rpx;
+  color: #9F9F9F;
+  font-size: 80rpx;
+  text-align: center;
+  line-height: 206rpx;
+  background: #373654;
+}
+.save{
+  width: 702rpx;
+  height: 88rpx;
+  text-align: center;
+  line-height: 88rpx;
+  margin: 80rpx auto;
+  background: linear-gradient(to right,#C10EFE,#8909FB);
+  border-radius: 44rpx;
+  color: #fff;
+  font-size: 36rpx;
+}

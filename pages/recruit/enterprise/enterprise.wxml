@@ -1,0 +1,84 @@
+<!--pages/recruit/enterprise/enterprise.wxml-->
+<view class='enterprise'>
+  <view class='photo'>
+    <image src='{{information.img}}'></image>
+  </view>
+  <view class='main'>
+    <view class='list'>
+      <view class='item {{active?"active":""}}' bindtap='cut2'>企业详情<view wx:if="{{active}}" class='border'></view></view>
+      <view class='item {{active?"":"active"}}' bindtap='cut1'>职位列表<view wx:if="{{!active}}" class='border'></view></view>
+    </view>
+    <view class='option' wx:if="{{active}}">
+      <view class='business'>
+        <view class='area'>{{information.name}}</view>
+        <view class='address'>
+          <image class='addressimg' mode='aspectFill' src='../../../images/address_select.png'></image>
+          {{information.address}}
+          <image class='more' mode='aspectFill' src='../../../images/more.png' ></image>
+        </view>
+      </view>
+      <view class='tag_box'>
+        <view class='title'>标签</view>
+        <view class='tag' wx:for="{{information.label}}" wx:for-item="list" wx:key="{{index}}">
+          <view class='label'>{{information.label[index]}}</view>
+          <!-- <view class='label'>包住</view>
+          <view class='label'>随时进场</view>
+          <view class='label'>月休两天</view>
+          <view class='label'>报销路费</view>
+          <view class='label'>压5结10</view> -->
+        </view>
+      </view>
+      <view class='info'>
+        <view class='title'>企业简介</view>
+        <view class='content'>{{information.info}}</view>
+      </view>
+    </view>
+    <view class='report' bindtap='report'>
+        <image src='../../../images/report.png'></image>
+      </view>
+    <view class='option' wx:if="{{!active}}">
+      <view class='tabulate'>
+        <view class='text' wx:for="{{information.list}}" wx:for-item="text" wx:key="{{index}}">
+          <view class='data'>
+            <view class='identity'>{{text.job}}</view>
+            <view class='price'>{{text.money}}</view>
+            <view class='city'>{{text.address}}</view>
+            <view class='person'>
+              <view class='pic'>
+                <image src='{{text.img}}'></image>
+              </view>
+              <view class='name'>{{text.person}}.{{text.personjob}}</view>
+            </view>
+
+          </view>
+          <view class='communicate'>立即沟通</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='cover'  wx:if="{{reason}}">
+    <view class='main'>
+      <view class='reason'>
+        <view class='inform'>举报对方</view>
+        <view class='list' bindtap='reason'>广告</view>
+        <view class='list' bindtap='reason'>色情</view>
+        <view class='list' bindtap='reason'>违法-政治敏感内容</view>
+        <view class='list' bindtap='reason'>个人简历不真实</view>
+        <view class='list' bindtap='reason'>索取隐私</view>
+        <view class='list' bindtap='reason'>人身攻击</view>
+        <view class='list' bindtap='reason'>猎头骚扰</view>
+        <view class='list' bindtap='reason'>其他</view>
+      </view>
+      <view class='cancel' bindtap='cancel'>取消</view>
+    </view>
+  </view>
+  <view class='success' wx:if="{{toast}}">
+    <view class='main'>
+      <view class='prompt'>
+        <view>举报成功</view>
+        <view>请返回查看</view>
+      </view>
+      <view class='know' bindtap='know'>知道了</view>
+    </view>
+  </view>
+</view>

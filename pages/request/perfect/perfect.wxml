@@ -1,0 +1,51 @@
+<!--pages/request/resume/resume.wxml-->
+<view class='resume'>
+  <view class='portrait'>
+    <view class='background'><image mode='aspectFill' src='../../../images/2.jpg'></image></view>
+    <view class='covercolor'></view>
+    <view class='pic'><image src='../../../images/2.jpg'></image></view>
+  </view>
+  <view class='list'>
+    <view class='area'>姓名</view>
+    <view class='entering'>
+      <input placeholder='请填写姓名' value='{{name}}'/>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='area'>手机号</view>
+    <view class='bind'>绑定</view>
+  </view>
+  <view class='list'>
+    <view class='area'>微信号</view>
+    <view class='entering'>
+      <input placeholder='请填写微信号'  type="digit" value='{{height}}'/>
+    </view>
+  </view>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class='list'>
+    <view class='area'>意向城市</view>
+    <view class='more'>{{region[0]}}，{{region[1]}}，{{region[2]}}<image src='../../../images/more.png'></image></view>
+  </picker>
+  <view class='list'>
+    <view class='area'>求职模式</view>
+    <view class='notice' bindtap='cut' wx:if="{{!cut}}">
+      <view class='slide'></view>
+    </view>
+    <view class='notice' style='background:#ADADAD' bindtap='cut' wx:else>
+      <view class='slide' style='left:0;width:36rpx'></view>
+    </view>
+  </view>
+  <view class='tag_box'>
+    <view class='title'>标签</view>
+    <view class='tag'>
+      <view wx:for="{{taglist}}" data-id='{{item.id}}' wx:key="{{index}}" class='label {{item.select?"active":""}}' bindtap='select'>{{item.name}}</view>
+    </view>
+  </view>
+  <view class='tag_box'>
+    <view class='title'>自定义标签</view>
+    <view class='tag'>
+      <view wx:for="{{selectclabel}}" wx:key="{{index}}" class='customlabel active'><image src='../../../images/label.png'></image> {{item}}</view>
+      <navigator url='/pages/request/label/label'><view class='addcustom'>+</view></navigator>
+    </view>
+  </view>
+  <view class='save' bindtap='resume'>提交</view>
+</view>

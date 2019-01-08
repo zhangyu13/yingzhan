@@ -1,0 +1,44 @@
+<!--pages/request/resume/resume.wxml-->
+<view class='resume'>
+  <view class='portrait'>
+    <view class='background'><image mode='aspectFill' src='../../../images/2.jpg'></image></view>
+    <view class='covercolor'></view>
+    <view class='pic'><image src='../../../images/2.jpg'></image></view>
+  </view>
+  <view class='list'>
+    <view class='area'>企业名称</view>
+    <view class='entering'>
+      <input placeholder='请填写企业名称' value='{{name}}'/>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='area'>企业电话</view>
+    <view class='entering'>
+      <input placeholder='请填写企业电话' type="number" value='{{tel}}'/>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='area'>企业地址</view>
+    <view class='entering'>
+      <input placeholder='请填写企业地址' value='{{address}}'/>
+    </view>
+  </view>
+  <view class='introduce'>
+    <view class='title'>企业介绍</view>
+    <textarea value='{{introduction}}'></textarea>
+    <view class='number'>0/500</view>
+  </view>
+  <view class='tag_box'>
+    <view class='title'>企业类型</view>
+    <view class='tag'>
+      <view wx:for="{{typelist}}" data-id='{{item.id}}' wx:key="{{index}}" class='label {{item.select?"activetype":""}}' bindtap='selecttype'>{{item.name}}</view>
+    </view>
+  </view>
+  <view class='tag_box'>
+    <view class='title'>标签</view>
+    <view class='tag'>
+      <view wx:for="{{taglist}}" data-id='{{item.id}}' wx:key="{{index}}" class='label {{item.select?"active":""}}' bindtap='select'>{{item.name}}</view>
+    </view>
+  </view>
+  <view class='save' bindtap='resume'>保存</view>
+</view>
